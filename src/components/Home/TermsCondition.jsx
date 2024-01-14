@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { useState } from 'react';
-import '../CSS/style.css';
+import '../../CSS/style.css';
 
 const TermsCondition = () => {
 	const [confirm, setConfirm] = useState(true);

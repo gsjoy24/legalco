@@ -1,7 +1,7 @@
-import mobile from '../assets/Image/1095.png';
-import qrcode from '../assets/Image/qr-code (1).png';
-import playstore from '../assets/Image/playstore.png';
-import Container from '../Common/Container';
+import mobile from '../../assets/Image/1095.png';
+import qrcode from '../../assets/Image/qr-code (1).png';
+import playstore from '../../assets/Image/playstore.png';
+import Container from '../../Common/Container';
 
 const Ads = () => {
 	return (

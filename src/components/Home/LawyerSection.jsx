@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import axios from 'axios';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Container from '../Common/Container';
-import SectionTitle from '../Common/SectionTitle';
-import { Link } from 'react-router-dom';
+
+import Container from '../../Common/Container';
+import SectionTitle from '../../Common/SectionTitle';
 
 const LawyerSection = () => {
 	const [lawyers, setLawyers] = useState([]);

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Container from '../Common/Container';
+import Container from '../../Common/Container';
 
 const Banner = () => {
 	return (

@@ -44,7 +44,9 @@ const AboutUs = () => {
 							<span className="text-2xl font-extrabold">
 								<TfiEmail />
 							</span>
-							<span className="text-[16px] ml-3">info@legalco.com.bd</span>
+							<span className="text-[16px] ml-3">
+								<a href="mailto:info@legalco.com.bd">info@legalco.com.bd</a>
+							</span>
 						</p>
 						<p className="flex items-center">
 							<span className="text-3xl font-extrabold -ml-[5px]">

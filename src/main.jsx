@@ -1,17 +1,23 @@
 import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-// const App = lazy(() => import('./App.jsx'));
 import './index.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AboutUs from './pages/AboutUs.jsx';
+
+// using lazy loading to improve user experience
+const App = lazy(() => import('./App.jsx'));
+const Home = lazy(() => import('./pages/Home.jsx'));
+const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
 		children: [
+			{
+				path: '/',
+				element: <Home />
+			},
 			{
 				path: '/about-us',
 				element: <AboutUs />

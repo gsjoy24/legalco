@@ -1,11 +1,12 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import Container from '../Common/Container';
-import SectionTitle from '../Common/SectionTitle';
 import { Link } from 'react-router-dom';
-import LoadingPage from '../shared/Loading';
 
-const ServicesPage = () => {
+import Container from '../../Common/Container';
+import SectionTitle from '../../Common/SectionTitle';
+import LoadingPage from '../../shared/Loading';
+
+const Services = () => {
 	const [services, setServices] = useState(null);
 	useEffect(() => {
 		(async () => {
@@ -47,4 +48,4 @@ const ServicesPage = () => {
 	);
 };
 
-export default ServicesPage;
+export default Services;
