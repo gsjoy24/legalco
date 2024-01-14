@@ -82,6 +82,7 @@ const Navbar = () => {
 												tabIndex={0}
 												className="dropdown-content bg-[#225559d7] z-[1] menu p-2 shadow rounded-xl w-72"
 											>
+												{/* TODO: Add dropdown */}
 												{/* {menu ? (
 													menu?.map((service) => (
 														<Link
@@ -146,6 +147,7 @@ const Navbar = () => {
 								<span className="text-[#46b2b8] hover:text-[#348286]">Services</span>
 								<details className="dropdown">
 									<summary className="text-[#46b2b8] hover:text-[#348286] duration-150"></summary>
+									{/* TODO: Add dropdown */}
 									{/* <ul className="dropdown-content -left-20 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
 										{menu ? (
 											menu?.map((service) => (

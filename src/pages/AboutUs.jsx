@@ -13,8 +13,8 @@ const AboutUs = () => {
 	return (
 		<div>
 			{/* Chamber information */}
-			<div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-screen">
-				<div className="w-5/5 md:w-4/6 lg:w-2/5 absolute top-[53%] md:top-[40%] lg:top-[40%] p-4 rounded-lg bg-[#2c7074da] border border-[#35878b33] shadow-md shadow-[#35878b33] py-10 pl-5 md:pl-14">
+			<div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-[500px]">
+				<div className="w-5/5 md:w-4/6 lg:w-2/5 absolute right-0 top-[16%] p-4 rounded-lg bg-[#2c7074da] border border-[#35878b33] shadow-md shadow-[#35878b33] py-10 pl-5 md:pl-14 m-3">
 					<h2 className="text-xl md:text-xl mb-3 uppercase mt-4">About LegalCO</h2>
 					<p className="flex items-start">
 						<span className="text-3xl font-extrabold -ml-[2px]"></span>
@@ -62,13 +62,11 @@ const AboutUs = () => {
 				</div>
 			</div>
 
-			<div className=" about-content-bg py-10  ">
+			<div className=" about-content-bg py-10 ">
 				<Container>
 					{/* About us details */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-40 text-white px-8 md:px-10 lg:px-20">
-						<div className="mb-8 md:mb-12">
-							<img src={aboutImg} alt="About Image" className="rounded-ss-3xl rounded-br-3xl" />
-						</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-40 items-center text-white px-3 md:px-10 lg:px-20">
+						<img src={aboutImg} alt="About Image" className="rounded-ss-3xl rounded-br-3xl" />
 
 						<div className="md:mt-[5%] lg:mt-[12%] lg:text-justify">
 							<h3 className="text-2xl md:text-2xl font-bold mb-2 uppercase">Anjuman Ara Lima</h3>
