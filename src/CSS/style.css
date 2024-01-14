@@ -1,0 +1,11 @@
+/* styles.css */
+@font-face {
+	font-family: 'Tiro Bangla';
+	src: url('/public/font/TiroBangla-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Tiro Bangla', sans-serif;
+}

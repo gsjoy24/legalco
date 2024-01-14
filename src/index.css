@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*================ Common CSS =================*/
+.lc_btn {
+	@apply bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white text-[16px] hover:text-[#225559] font-semibold py-2 px-6 rounded-full duration-300 uppercase;
+}
+
+.bg_image {
+	background: linear-gradient(rgba(35, 35, 35, 0.502), rgba(35, 35, 35, 0.8)), url('./assets/lawyer-bg.jpg') fixed;
+	background-size: cover;
+}
+
+.footer_bg_image {
+	background: linear-gradient(#225559cc, #225559e1), url('./assets/foooter_bg.jpg') fixed top;
+	background-size: cover;
+}
+
+.lawyer_card_bg_image {
+	background: linear-gradient(#225559e1, #225559e1), url('./assets/lawyer_card_bg.jpg') left;
+	background-size: cover;
+}
+
+.team_banner_bg_image {
+	background: linear-gradient(#22555998, #22555998), url('./assets/team_banner.jpg') top;
+	background-size: cover;
+}
+
+.service_banner_bg_image {
+	background: linear-gradient(#225559c1, #225559c1), url('./assets/service_banner.jpg') top;
+	background-size: cover;
+}
+
+.footer_bg_image {
+	background: linear-gradient(#225559cc, #225559e1), url('./assets/foooter_bg.jpg') fixed top;
+	background-size: cover;
+}
+
+.lawyer_card_bg_image {
+	background: linear-gradient(#225559e1, #225559e1), url('./assets/lawyer_card_bg.jpg') left;
+	background-size: cover;
+}
+
+.team_banner_bg_image {
+	background: linear-gradient(#22555998, #22555998), url('./assets/team_banner.jpg') top;
+	background-size: cover;
+}
+
+.text_shadow-color {
+	color: #fbf8f2;
+	text-shadow: -2px 0 #23232380, 0 2px #23232380, 2px 0 #23232380, 0 -2px #23232380;
+}
+
+.text_shadow-white {
+	color: #232323;
+	text-shadow: -2px 0 #fbf8f2, 0 2px #fbf8f2, 2px 0 #fbf8f2, 0 -2px #fbf8f2;
+}
+
+.box_shadow {
+	box-shadow: 15px 15px 5px #282424;
+}
+
+/*======= Navbar Styles =======*/
+* {
+	scroll-behavior: smooth;
+}
+
+.nav-bg {
+	@apply bg-[#225559e1] text-white shadow-md;
+}
+
+/*======= Banner Styles =======*/
+.bg-banner-pattern {
+	background-image: url('./assets/image.jpg');
+}
+
+/*======= Slider css =======*/
+.swiper-button-prev {
+	top: 30px !important;
+	right: 80px !important;
+	left: auto !important;
+	border: none;
+	padding: 5px !important;
+	width: 60px !important;
+	height: 60px !important;
+	border-radius: 5px;
+	z-index: 20;
+	background: #fff !important;
+}
+
+.swiper-button-next {
+	top: 30px !important;
+	right: 10px !important;
+	left: auto !important;
+	border: none;
+	padding: 5px !important;
+	width: 60px !important;
+	height: 60px !important;
+	border-radius: 5px;
+	background: #fff !important;
+	z-index: 20;
+}
+
+/*======= Blogs page =======*/
+.blog-bg {
+	background: linear-gradient(#17244181, #17244181), url('./assets/blogs/signature-paper.jpg') fixed bottom;
+	background-size: cover;
+}
+
+.blog-details-bg {
+	background: linear-gradient(#17244181, #17244181), url('./assets/blogs/gavel-hamer.jpg') fixed bottom;
+	background-size: cover;
+}
+
+/*======= About Us page =======*/
+
+.about-us-bg {
+	background: linear-gradient(#17244181, #17244181), url('./assets/about-us/about-banner.jpg') fixed bottom;
+	background-size: cover;
+}
+
+.about-content-bg {
+	background: linear-gradient(#2c7074da, #2c7074da), url('./assets/about-us/hand-shak.jpg') fixed top;
+	background-size: cover;
+}
+
+/*======= Contact Us page =======*/
+
+.contact-us-bg {
+	background: linear-gradient(#17244181, #17244181), url('./assets/contact-us/office-telephone.jpg') fixed bottom;
+	background-size: cover;
+}
