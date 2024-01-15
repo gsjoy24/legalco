@@ -43,7 +43,7 @@ const Navbar = () => {
 						{/* Navbar */}
 						<div className="navbar p-0 w-full z-10">
 							<div className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${color ? 'text-white' : 'text-[#35868b]'}`}>
-								<Link to="/">
+								<Link onClick={() => window.scrollTo(0, 0)} to="/">
 									<img src={logo} alt="Logo" width={color ? 110 : 140} />
 								</Link>
 							</div>
@@ -58,11 +58,17 @@ const Navbar = () => {
 								<ul className="menu-horizontal flex items-center gap-6 text-[15px] duration-200">
 									{/* Navbar menu contents */}
 									<div className="text-3xl md:text-3xl font-bold text-[#28676b] lg:hidden">
-										<Link to="/">LegalCo</Link>
+										<Link onClick={() => window.scrollTo(0, 0)} to="/">
+											LegalCo
+										</Link>
 									</div>
 
 									<li>
-										<Link className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase" to="/">
+										<Link
+											onClick={() => window.scrollTo(0, 0)}
+											className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+											to="/"
+										>
 											Home
 										</Link>
 									</li>
@@ -100,23 +106,39 @@ const Navbar = () => {
 									</li>
 
 									<li>
-										<Link className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase" to="/appointment">
+										<Link
+											onClick={() => window.scrollTo(0, 0)}
+											className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+											to="/appointment"
+										>
 											Appointment
 										</Link>
 									</li>
 
 									<li>
-										<Link className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase" to="/blogs">
+										<Link
+											onClick={() => window.scrollTo(0, 0)}
+											className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+											to="/blogs"
+										>
 											Blogs
 										</Link>
 									</li>
 									<li>
-										<Link className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase" to="/about-us">
+										<Link
+											onClick={() => window.scrollTo(0, 0)}
+											className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+											to="/about-us"
+										>
 											About Us
 										</Link>
 									</li>
 									<li>
-										<Link className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase" to="/contact-us">
+										<Link
+											onClick={() => window.scrollTo(0, 0)}
+											className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+											to="/contact-us"
+										>
 											Contact Us
 										</Link>
 									</li>
@@ -131,13 +153,15 @@ const Navbar = () => {
 						<ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-start duration-200 bg-[#d1e0dc]">
 							{/* Sidebar content here */}
 							<div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b border-[#348286]">
-								<Link className="block" to="/">
+								<Link onClick={() => window.scrollTo(0, 0)} className="block" to="/">
 									<img className="mx-5" src={grayLogo} alt="Logo" width={150} />
 								</Link>
 							</div>
 
 							<li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
-								<Link to="/">Home</Link>
+								<Link onClick={() => window.scrollTo(0, 0)} to="/">
+									Home
+								</Link>
 							</li>
 
 							<li className="flex items-center gap-4 pl-5">
@@ -166,16 +190,24 @@ const Navbar = () => {
 							</li>
 
 							<li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
-								<Link to="/appointment">Appointment</Link>
+								<Link onClick={() => window.scrollTo(0, 0)} to="/appointment">
+									Appointment
+								</Link>
 							</li>
 							<li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
-								<Link to="/blogs">Blogs</Link>
+								<Link onClick={() => window.scrollTo(0, 0)} to="/blogs">
+									Blogs
+								</Link>
 							</li>
 							<li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
-								<Link to="/about-us">About Us</Link>
+								<Link onClick={() => window.scrollTo(0, 0)} to="/about-us">
+									About Us
+								</Link>
 							</li>
 							<li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
-								<Link to="/contact-us">Contact Us</Link>
+								<Link onClick={() => window.scrollTo(0, 0)} to="/contact-us">
+									Contact Us
+								</Link>
 							</li>
 						</ul>
 					</div>

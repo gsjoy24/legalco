@@ -34,25 +34,24 @@ const Appointment = () => {
 			// const mailResponse = await axios.post(`${import.meta.env.VITE_SERVER_URL}/mail-to-lawyer`, {
 			// 	...appointment
 			// });
-			console.log(mailResponse?.data);
-			if (mailResponse?.data?.success) {
-				reset();
-				Swal.fire({
-					title: 'Success',
-					text: 'You get all service in LEGALCO app. Please download this.',
-					icon: 'success',
-					showCancelButton: true,
-					confirmButtonColor: '#3085d6',
-					cancelButtonColor: '#d33',
-					confirmButtonText: 'Download Now'
-				}).then((result) => {
-					if (result.isConfirmed) {
-						navigate('https://www.youtube.com/watch?v=34UMor0gQEA');
-					} else {
-						navigate('/');
-					}
-				});
-			}
+			// if (mailResponse?.data?.success) {
+			// }
+			reset();
+			Swal.fire({
+				title: 'Success',
+				text: 'You get all service in LEGALCO app. Please download this.',
+				icon: 'success',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Download Now'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					window.open('https://www.youtube.com/watch?v=34UMor0gQEA', '_blank');
+				} else {
+					navigate('/');
+				}
+			});
 		}
 	};
 	const serviceInterest = watch('serviceInterest');
