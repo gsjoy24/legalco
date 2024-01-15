@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const App = lazy(() => import('./App.jsx'));
 const Home = lazy(() => import('./pages/Home.jsx'));
 const Blogs = lazy(() => import('./pages/Blogs.jsx'));
+const BlogDetails = lazy(() => import('./pages/BlogDetails.jsx'));
 const Appointment = lazy(() => import('./pages/Appointment.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
 
@@ -25,13 +26,12 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/blogs',
-				element: <Blogs />,
-				children: [
-					{
-						path: '/blogs/:id',
-						element: <Blogs />
-					}
-				]
+				element: <Blogs />
+			},
+			{
+				path: '/blogs/:id',
+				element: <BlogDetails />,
+				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/blogs/${params.id}`)
 			},
 			{
 				path: '/about-us',
