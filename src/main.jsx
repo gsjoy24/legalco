@@ -13,6 +13,7 @@ const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
 const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
 const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
+const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
 
 const router = createBrowserRouter([
 	{
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
 			{
 				path: '/privacy-and-policy',
 				element: <PrivacyAndPolicy />
+			},
+			{
+				path: '/return-and-refund-policy',
+				element: <RefundAndRefundPolicy />
 			}
 		]
 	}
