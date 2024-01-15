@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 
 const UseBlogs = () => {
 	const [refetch, setRefetch] = useState(false);
-	const [allBlogs, setAllBlogs] = useState(null);
+	const [allBlogs, setAllBlogs] = useState([]);
 
 	useEffect(() => {
 		(async () => {
 			try {
-				const response = await axios(`/api/blog`);
+				const response = await axios(`https://legalco-server.vercel.app/blogs`);
 				setAllBlogs(response.data);
 			} catch (error) {
 				// Handle error

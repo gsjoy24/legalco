@@ -7,10 +7,11 @@ import SectionTitle from '../../Common/SectionTitle';
 import LoadingPage from '../../shared/Loading';
 
 const Services = () => {
-	const [services, setServices] = useState(null);
+	const [services, setServices] = useState([]);
+
 	useEffect(() => {
 		(async () => {
-			const res = await axios('/api/services');
+			const res = await axios(`${import.meta.env.VITE_SERVER_URL}/services`);
 			if (res?.data) {
 				setServices(res?.data);
 			}
