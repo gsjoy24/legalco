@@ -43,12 +43,10 @@ const BlogsPage = () => {
 					<div className="blog-bg lg:flex items-center justify-center space-y-3 p-4 md:px-8 pt-[150px] pb-10 -mt-[100px] text-white">
 						<div className="md:pr-8 flex flex-col items-center">
 							<img
-								className="w-full min-w-[340px] rounded-md"
+								className="w-full min-w-[340px] max-w-[420px] rounded-md"
 								loading="lazy"
 								src={firstBlog?.image ? firstBlog.image : 'https://i.ibb.co/Ytbhzg4/blank.jpg'}
 								alt="customer"
-								width={500}
-								height={500}
 							/>
 						</div>
 						<div className="lg:pl-8 flex flex-col">

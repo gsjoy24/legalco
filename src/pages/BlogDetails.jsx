@@ -33,7 +33,7 @@ const BlogDetails = () => {
 						<div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 space-y-4">
 							<div className="col-span-2">
 								<h1 className="text-xl md:text-2xl mb-3 lg:mb-5 font-semibold">{blog?.title}</h1>
-								<img src={blog?.image} alt={blog?.title} className="w-full mb-4 rounded-md" width={1000} height={400} />
+								<img src={blog?.image} alt={blog?.title} className="w-full mb-4 rounded-md" width={600} height={400} />
 								<p className="text-gray-400 text-center">{blog?.subtitle}</p>
 								<p className="mt-4 mb-10 text-gray-800">{blog?.content}</p>
 
