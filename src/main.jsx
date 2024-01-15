@@ -11,6 +11,7 @@ const BlogDetails = lazy(() => import('./pages/BlogDetails.jsx'));
 const Appointment = lazy(() => import('./pages/Appointment.jsx'));
 const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
+const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
 
 const router = createBrowserRouter([
 	{
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
 			{
 				path: '/about-us',
 				element: <AboutUs />
+			},
+			{
+				path: '/lawyers/:id',
+				element: <LawyerDetails />,
+				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/lawyers/${params.id}`)
 			}
 		]
 	}
