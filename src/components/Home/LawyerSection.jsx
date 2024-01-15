@@ -73,7 +73,7 @@ const LawyerSection = () => {
 									<div className="p-5 text-center flex flex-col justify-between">
 										<h2 className={`text-xl mb-2`}>{lawyer?.name}</h2>
 										<h3>{lawyer?.department}</h3>
-										<Link href={`/lawyerdetails/${lawyer?._id}`} className="mt-4 lc_btn">
+										<Link to={`/lawyerdetails/${lawyer?._id}`} className="mt-4 lc_btn">
 											Learn more
 										</Link>
 									</div>
@@ -96,7 +96,7 @@ const LawyerSection = () => {
 									<div className="p-5 text-center flex flex-col justify-between">
 										<h2 className={`text-xl mb-2`}>{lawyer?.name}</h2>
 										<h3>{lawyer?.department}</h3>
-										<Link href={`/lawyerdetails/${lawyer?._id}`} className="mt-4 lc_btn">
+										<Link to={`/lawyerdetails/${lawyer?._id}`} className="mt-4 lc_btn">
 											Learn more
 										</Link>
 									</div>

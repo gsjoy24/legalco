@@ -8,7 +8,7 @@ const UseBlogs = () => {
 	useEffect(() => {
 		(async () => {
 			try {
-				const response = await axios(`https://legalco-server.vercel.app/blogs`);
+				const response = await axios(`${import.meta.env.VITE_SERVER_URL}/blogs`);
 				setAllBlogs(response.data);
 			} catch (error) {
 				// Handle error
