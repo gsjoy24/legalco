@@ -6,6 +6,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 import Container from '../Common/Container';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Navbar = () => {
 	const [menu, setMenu] = useState([]);
@@ -17,11 +18,11 @@ const Navbar = () => {
 		(async () => {
 			const res = await axios(`${import.meta.env.VITE_SERVER_URL}/services`);
 			if (res?.data) {
-				setServices(res?.data);
+				setMenu(res?.data);
 			}
 		})();
 	}, []);
-	
+
 	if (typeof window !== 'undefined') {
 		const changeColor = () => {
 			if (window?.scrollY >= 110) {
@@ -80,8 +81,7 @@ const Navbar = () => {
 												tabIndex={0}
 												className="dropdown-content bg-[#225559d7] z-[1] menu p-2 shadow rounded-xl w-72"
 											>
-												{/* TODO: Add dropdown */}
-												{/* {menu ? (
+												{menu ? (
 													menu?.map((service) => (
 														<Link
 															to={`/servicedetails/${service?._id}`}
@@ -95,7 +95,7 @@ const Navbar = () => {
 													<div className="col-span-3 flex justify-center">
 														<span className="loading loading-dots loading-md text-center py-8"></span>
 													</div>
-												)} */}
+												)}
 											</ul>
 										</div>
 									</li>
@@ -145,8 +145,8 @@ const Navbar = () => {
 								<span className="text-[#46b2b8] hover:text-[#348286]">Services</span>
 								<details className="dropdown">
 									<summary className="text-[#46b2b8] hover:text-[#348286] duration-150"></summary>
-									{/* TODO: Add dropdown */}
-									{/* <ul className="dropdown-content -left-20 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
+
+									<ul className="dropdown-content -left-20 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
 										{menu ? (
 											menu?.map((service) => (
 												<Link
@@ -162,7 +162,7 @@ const Navbar = () => {
 												<span className="loading loading-dots loading-md text-center py-8"></span>
 											</div>
 										)}
-									</ul> */}
+									</ul>
 								</details>
 							</li>
 
