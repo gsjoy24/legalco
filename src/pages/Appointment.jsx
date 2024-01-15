@@ -1,10 +1,12 @@
-import React, { useNavigate } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import contact from '../assets/contactus.jpg';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { TfiEmail, TfiLocationPin } from 'react-icons/tfi';
 import { BsTelephone } from 'react-icons/bs';
+import Container from '../Common/Container';
 
 const Appointment = () => {
 	const navigate = useNavigate();
@@ -29,10 +31,10 @@ const Appointment = () => {
 		const res = await axios.post(`${import.meta.env.VITE_SERVER_URL}/appointments`, { ...appointment });
 
 		if (res?.data?.insertedId) {
-			const mailResponse = await axios.post(`${import.meta.env.VITE_SERVER_URL}/mail-to-lawyer`, {
-				...appointment
-			});
-
+			// const mailResponse = await axios.post(`${import.meta.env.VITE_SERVER_URL}/mail-to-lawyer`, {
+			// 	...appointment
+			// });
+			console.log(mailResponse?.data);
 			if (mailResponse?.data?.success) {
 				reset();
 				Swal.fire({
@@ -57,7 +59,7 @@ const Appointment = () => {
 
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
-			<Image className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
+			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
 
 			{/* ========== contact section ========== */}
 			<Container>
