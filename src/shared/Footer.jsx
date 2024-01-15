@@ -10,7 +10,7 @@ const Footer = () => {
 				<div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 py-5 border-b-2 border-amber-500 jm_container">
 					<div className="">
 						<div>
-							<Link to="/">
+							<Link onClick={() => window.scrollTo(0, 0)} to="/">
 								<img src={logo} alt="" width={150} />
 							</Link>
 							<p className="mt-3">
@@ -65,42 +65,58 @@ const Footer = () => {
 
 						<ul className="space-y-1">
 							<li>
-								<Link to="/" className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to="/" className="text-[14px] hover:underline">
 									Home
 								</Link>
 							</li>
 							<li>
-								<Link to="/services" className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to="/services" className="text-[14px] hover:underline">
 									Services
 								</Link>
 							</li>
 							<li>
-								<Link to="/appointment" className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to="/appointment" className="text-[14px] hover:underline">
 									Appointment
 								</Link>
 							</li>
 							<li>
-								<Link to="/blogs" className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to="/blogs" className="text-[14px] hover:underline">
 									Blog
 								</Link>
 							</li>
 							<li>
-								<Link to="/privacy-and-policy" className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to="/privacy-and-policy"
+									className="text-[14px] hover:underline"
+								>
 									Privacy and Policy
 								</Link>
 							</li>
 							<li>
-								<Link to="/return-and-refund-policy" className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to="/return-and-refund-policy"
+									className="text-[14px] hover:underline"
+								>
 									Return And Refund Policy
 								</Link>
 							</li>
 							<li>
-								<Link to="/terms-and-condition" className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to="/terms-and-condition"
+									className="text-[14px] hover:underline"
+								>
 									Terms and Conditions
 								</Link>
 							</li>
 							<li>
-								<Link to="/client-bill-of-rights" className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to="/client-bill-of-rights"
+									className="text-[14px] hover:underline"
+								>
 									Clients Bill Of Rights
 								</Link>
 							</li>
@@ -113,32 +129,44 @@ const Footer = () => {
 
 						<ul className="space-y-1">
 							<li>
-								<Link to={'/service-details/65224fef2ef1838c20606978'} className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to={'/service-details/65224fef2ef1838c20606978'}
+									className="text-[14px] hover:underline"
+								>
 									Business Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/'} className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to={'/'} className="text-[14px] hover:underline">
 									Education Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/service-details/65224fef2ef1838c2060697b'} className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to={'/service-details/65224fef2ef1838c2060697b'}
+									className="text-[14px] hover:underline"
+								>
 									Family Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/service-details/65224fef2ef1838c20606979'} className="text-[14px] hover:underline">
+								<Link
+									onClick={() => window.scrollTo(0, 0)}
+									to={'/service-details/65224fef2ef1838c20606979'}
+									className="text-[14px] hover:underline"
+								>
 									Real Estate Construction Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/'} className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to={'/'} className="text-[14px] hover:underline">
 									Personal Injury Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/'} className="text-[14px] hover:underline">
+								<Link onClick={() => window.scrollTo(0, 0)} to={'/'} className="text-[14px] hover:underline">
 									Insurance Defense
 								</Link>
 							</li>
