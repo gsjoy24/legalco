@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import Container from '../../Common/Container';
+import bg from '../../assets/image.jpg';
 
 const Banner = () => {
 	return (
-		<div className="bg-[url('../assets/image.jpg')] bg-cover min-h-[105vh] flex items-center -mt-[120px]">
+		<div className="bg_banner min-h-[105vh] flex items-center -mt-[120px]">
 			<Container>
 				<div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-20 md:mt-10">
 					<div className="text-white md:mt-5 lg:mt-16">

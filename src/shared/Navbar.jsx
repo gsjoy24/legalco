@@ -9,21 +9,19 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	const [menu, setMenu] = useState([]);
+	console.log(menu);
 	// Change navbar color when scrolling
 	const [color, setColor] = useState(false);
 
 	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const response = await Axios.get('/data/data.json'); // Update the path accordingly
-				setMenu(response.data);
-			} catch (error) {
-				console.error('Error fetching data:', error);
+		(async () => {
+			const res = await axios(`${import.meta.env.VITE_SERVER_URL}/services`);
+			if (res?.data) {
+				setServices(res?.data);
 			}
-		};
-
-		fetchData();
+		})();
 	}, []);
+	
 	if (typeof window !== 'undefined') {
 		const changeColor = () => {
 			if (window?.scrollY >= 110) {

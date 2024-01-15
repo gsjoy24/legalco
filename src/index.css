@@ -6,7 +6,10 @@
 .lc_btn {
 	@apply bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white text-[16px] hover:text-[#225559] font-semibold py-2 px-6 rounded-full duration-300 uppercase;
 }
-
+.bg_banner {
+	background: url('./assets/image.jpg') fixed;
+	background-size: cover;
+}
 .bg_image {
 	background: linear-gradient(rgba(35, 35, 35, 0.502), rgba(35, 35, 35, 0.8)), url('./assets/lawyer-bg.jpg') fixed;
 	background-size: cover;

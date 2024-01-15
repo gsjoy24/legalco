@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import Ads from '../components/Home/Ads';
 import Banner from '../components/Home/Banner';
 import Services from '../components/Home/Services';
 import Cyberbullies from '../components/Home/Cyberbullies';
+import LawyerSection from '../components/Home/LawyerSection';
 import HappyClient from '../components/Home/HappyClient';
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
 			<Banner />
 			<Ads />
 			<Services />
-			{/* <LawyerSection></LawyerSection> */}
+			<LawyerSection />
 			<Cyberbullies />
 			<HappyClient />
 
