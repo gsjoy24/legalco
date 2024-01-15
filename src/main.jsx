@@ -12,6 +12,7 @@ const Appointment = lazy(() => import('./pages/Appointment.jsx'));
 const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
 const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
+const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
 
 const router = createBrowserRouter([
 	{
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <Home />
+			},
+			{
+				path: '/lawyers/:id',
+				element: <LawyerDetails />,
+				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/lawyers/${params.id}`)
 			},
 			{
 				path: '/appointment',
@@ -44,9 +50,8 @@ const router = createBrowserRouter([
 				element: <AboutUs />
 			},
 			{
-				path: '/lawyers/:id',
-				element: <LawyerDetails />,
-				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/lawyers/${params.id}`)
+				path: '/privacy-and-policy',
+				element: <PrivacyAndPolicy />
 			}
 		]
 	}

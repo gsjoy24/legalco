@@ -85,22 +85,22 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link to="/privacyandpolicy" className="text-[14px] hover:underline">
+								<Link to="/privacy-and-policy" className="text-[14px] hover:underline">
 									Privacy and Policy
 								</Link>
 							</li>
 							<li>
-								<Link to="/returnandrefundpolicy" className="text-[14px] hover:underline">
+								<Link to="/return-and-refund-policy" className="text-[14px] hover:underline">
 									Return And Refund Policy
 								</Link>
 							</li>
 							<li>
-								<Link to="/termsandcondition" className="text-[14px] hover:underline">
+								<Link to="/terms-and-condition" className="text-[14px] hover:underline">
 									Terms and Conditions
 								</Link>
 							</li>
 							<li>
-								<Link to="/clientbillofrights" className="text-[14px] hover:underline">
+								<Link to="/client-bill-of-rights" className="text-[14px] hover:underline">
 									Clients Bill Of Rights
 								</Link>
 							</li>
@@ -113,7 +113,7 @@ const Footer = () => {
 
 						<ul className="space-y-1">
 							<li>
-								<Link to={'/servicedetails/65224fef2ef1838c20606978'} className="text-[14px] hover:underline">
+								<Link to={'/service-details/65224fef2ef1838c20606978'} className="text-[14px] hover:underline">
 									Business Law
 								</Link>
 							</li>
@@ -123,12 +123,12 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link to={'/servicedetails/65224fef2ef1838c2060697b'} className="text-[14px] hover:underline">
+								<Link to={'/service-details/65224fef2ef1838c2060697b'} className="text-[14px] hover:underline">
 									Family Law
 								</Link>
 							</li>
 							<li>
-								<Link to={'/servicedetails/65224fef2ef1838c20606979'} className="text-[14px] hover:underline">
+								<Link to={'/service-details/65224fef2ef1838c20606979'} className="text-[14px] hover:underline">
 									Real Estate Construction Law
 								</Link>
 							</li>
@@ -139,7 +139,7 @@ const Footer = () => {
 							</li>
 							<li>
 								<Link to={'/'} className="text-[14px] hover:underline">
-									Insurance Defence
+									Insurance Defense
 								</Link>
 							</li>
 						</ul>
