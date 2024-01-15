@@ -10,7 +10,6 @@ import axios from 'axios';
 
 const Navbar = () => {
 	const [menu, setMenu] = useState([]);
-	console.log(menu);
 	// Change navbar color when scrolling
 	const [color, setColor] = useState(false);
 

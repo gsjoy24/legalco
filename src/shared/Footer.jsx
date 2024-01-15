@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
-		<footer className="footer_bg_img pt-16 text-white overflow-hidden">
+		<footer className="footer_bg_image pt-16 text-white overflow-hidden">
 			<Container>
 				<div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 py-5 border-b-2 border-amber-500 jm_container">
 					<div className="">
