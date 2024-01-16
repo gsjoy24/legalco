@@ -89,7 +89,7 @@ const Navbar = () => {
 												{menu ? (
 													menu?.map((service) => (
 														<Link
-															to={`/servicedetails/${service?._id}`}
+															to={`/services/${service?._id}`}
 															key={service?._id}
 															className="text-[14px] text-white hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md"
 														>
@@ -173,7 +173,7 @@ const Navbar = () => {
 										{menu ? (
 											menu?.map((service) => (
 												<Link
-													to={`/servicedetails/${service?._id}`}
+													to={`/services/${service?._id}`}
 													key={service?._id}
 													className="text-[14px] text-[#348286] hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
 												>

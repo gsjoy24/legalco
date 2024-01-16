@@ -1,9 +1,14 @@
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 import contact from '../assets/contactus.jpg';
 
 const RefundAndRefundPolicy = () => {
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
+			<PageMetaData
+				title="Return and Refund Policy"
+				description="Review LegalCO Limited's Return and Refund Policy for a transparent understanding of our commitment to customer satisfaction. Our policy outlines the terms and conditions regarding product returns and refunds, providing clarity on eligibility criteria and procedures. At LegalCO, we prioritize your experience and aim to ensure a fair and straightforward process for handling returns and refunds. Explore our policy to make informed decisions and feel confident in your interactions with our services."
+			/>
 			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
 			<Container>
 				<div className=" ">

@@ -73,36 +73,13 @@ const LawyerSection = () => {
 									<div className="p-5 text-center flex flex-col justify-between">
 										<h2 className={`text-xl mb-2`}>{lawyer?.name}</h2>
 										<h3>{lawyer?.department}</h3>
-										<Link to={`/lawyers/${lawyer?._id}`} className="mt-4 lc_btn">
+										<Link onClick={() => window.scrollTo(0, 0)} to={`/lawyers/${lawyer?._id}`} className="mt-4 lc_btn">
 											Learn more
 										</Link>
 									</div>
 								</div>
 							</SwiperSlide>
 						))}
-						{/* {lawyers.map((lawyer) => (
-							<SwiperSlide key={lawyer?._id}>
-								<div className="card rounded-none bg-white hover:bg-[#ccbd9977] transition-all w-full my-10 mt-20 border shadow-md border-[#2323237e]">
-									<figure>
-										<img
-											loading="lazy"
-											src={lawyer?.image}
-											alt={lawyer?.name}
-											width={300}
-											height={300}
-											className="w-full h-[320px] object-top object-cover shadow-sm"
-										/>
-									</figure>
-									<div className="p-5 text-center flex flex-col justify-between">
-										<h2 className={`text-xl mb-2`}>{lawyer?.name}</h2>
-										<h3>{lawyer?.department}</h3>
-										<Link to={`/lawyers/${lawyer?._id}`} className="mt-4 lc_btn">
-											Learn more
-										</Link>
-									</div>
-								</div>
-							</SwiperSlide>
-						))} */}
 					</Swiper>
 				</div>
 			</Container>

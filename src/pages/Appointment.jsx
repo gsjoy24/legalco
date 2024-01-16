@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import { TfiEmail, TfiLocationPin } from 'react-icons/tfi';
 import { BsTelephone } from 'react-icons/bs';
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 
 const Appointment = () => {
 	const navigate = useNavigate();
@@ -58,8 +59,11 @@ const Appointment = () => {
 
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
+			<PageMetaData
+				title="Appointment | LegalCo"
+				description="Book legal consultations and appointments with ease on the LegalCO platform. Our appointment page allows you to schedule dedicated sessions with our experienced legal professionals. Take the first step in addressing your legal concerns by securing a convenient and confidential appointment with LegalCO Limited. Explore personalized legal guidance and support tailored to your specific needs."
+			/>
 			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
-
 			{/* ========== contact section ========== */}
 			<Container>
 				<div className="contact-section">

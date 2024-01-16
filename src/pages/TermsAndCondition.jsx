@@ -1,9 +1,15 @@
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 import contact from '../assets/contactus.jpg';
 
 const TermsAndCondition = () => {
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
+			<PageMetaData
+				title="Terms And Condition | LegalCo"
+				description="Read and understand LegalCO Limited's Terms and Conditions to navigate our platform with confidence. Our comprehensive terms outline the guidelines and agreements governing your use of our app and web-enabled services. Discover the rights, responsibilities, and expectations for both users and LegalCO. By familiarizing yourself with our Terms and Conditions, you ensure a secure and harmonious experience while accessing legal information and services on our platform."
+			/>
+
 			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
 			<Container>
 				<div className=" ">

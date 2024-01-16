@@ -4,6 +4,7 @@ import axios from 'axios';
 import { MdArrowBackIos } from 'react-icons/md';
 import Container from '../Common/Container';
 import { Link, useLoaderData } from 'react-router-dom';
+import PageMetaData from '../Common/PageMetaData';
 
 const BlogDetails = () => {
 	const blog = useLoaderData();
@@ -26,6 +27,7 @@ const BlogDetails = () => {
 
 	return (
 		<div className="min-h-screen py-2 md:py-5 -mt-[120px] mb-20">
+			<PageMetaData title={blog?.title} description={blog?.content} />
 			<div className="h-72 bg-white blog-details-bg"></div>
 			<Container>
 				<div className="flex justify-center mt-8">

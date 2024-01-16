@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import emailIcon from '../assets/contact-us/open-mail.png';
 import toast from 'react-hot-toast';
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 
 const ContactUsPage = () => {
 	const form = useRef();
@@ -34,6 +35,11 @@ const ContactUsPage = () => {
 
 	return (
 		<>
+			<PageMetaData
+				title="Contact Us | LegalCo"
+				description="Connect with LegalCO Limited through our Contact Us page. Reach out for inquiries, feedback, or assistance regarding our legal services and offerings. Our dedicated team is ready to provide prompt and personalized responses to address your queries. Contact LegalCO today and discover the convenience of efficient communication for all your legal needs."
+			/>
+
 			<div className="contact-us-bg h-60 md:h-96 -mt-[100px]">
 				<div className="flex items-center justify-center">
 					<h2 className="text-3xl md:text-4xl text-white font-serif font-bold absolute top-[20%] md:top-[35%]">

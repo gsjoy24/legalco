@@ -8,10 +8,15 @@ import ceo from '../assets/about-us/mehedi.jpg';
 import missionImg from '../assets/about-us/mission.jpg';
 import visionImg from '../assets/about-us/vision.jpg';
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 
 const AboutUs = () => {
 	return (
 		<div>
+			<PageMetaData
+				title="About Us | LegalCO"
+				description="Learn about LegalCO Limited, the driving force behind our app and web-enabled platform. Explore our story, mission, and commitment to delivering comprehensive legal information and services. The About Us page provides insight into the values that define LegalCO, showcasing our dedication to transparency, expertise, and user satisfaction. Discover the team behind LegalCO and the passion that fuels our commitment to serving your legal needs."
+			/>
 			{/* Chamber information */}
 			<div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-[500px]">
 				<div className="w-5/5 md:w-4/6 lg:w-2/5 absolute right-0 top-[16%] p-4 rounded-lg bg-[#2c7074da] border border-[#35878b33] shadow-md shadow-[#35878b33] py-10 pl-5 md:pl-14 m-3">

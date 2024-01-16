@@ -1,9 +1,15 @@
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 import contact from '../assets/contactus.jpg';
 
 const ClientBillOfRights = () => {
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
+			<PageMetaData
+				title="Client Bill of Rights | LegalCO"
+				description="Explore LegalCO Limited's Client Bill of Rights for a transparent commitment to your satisfaction. Our Client Bill of Rights outlines the principles guiding our client relationships, ensuring fairness, transparency, and respect. Discover the rights and privileges you can expect as a valued client of LegalCO. Trust in our dedication to uphold your rights and provide a positive experience as you navigate legal services through our app and web-enabled platform."
+			/>
+
 			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
 			<Container>
 				<div className=" ">

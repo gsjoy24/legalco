@@ -4,10 +4,10 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaTwitter } from 'react-icons/fa6';
 import moment from 'moment';
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 
 const LawyerDetails = () => {
 	const lawyerDetails = useLoaderData();
-
 	const [activeTab, setActiveTab] = useState('PROFILE');
 
 	const {
@@ -30,6 +30,10 @@ const LawyerDetails = () => {
 
 	return (
 		<div className="-mt-24">
+			<PageMetaData
+				title={`${name} | LegalCO`}
+				description="Explore the profile of our experienced legal professional on the Lawyer Details page. Get to know the qualifications, expertise, and specialization of our dedicated lawyers at LegalCO Limited. Learn about their professional background, achievements, and commitment to providing personalized legal assistance. Trust in the expertise of our legal team to address your specific needs and guide you through the complexities of the legal landscape."
+			/>
 			<div className="team_banner_bg_image h-[450px] text-white flex items-end justify-center">
 				<Container>
 					<div className="text-center mb-20">
@@ -119,6 +123,7 @@ const LawyerDetails = () => {
 
 								<Link
 									to={`/lawyer-appointment/${lawyerDetails?._id}`}
+									onClick={() => window.scrollTo(0, 0)}
 									className="bg-white px-5 py-3 text-[#a51890] rounded-md mt-5 block w-fit uppercase font-medium"
 								>
 									Appointment now

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Container from '../Common/Container';
 import LoadingPage from '../shared/Loading';
 import BlogCard from '../components/BlogCard';
+import PageMetaData from '../Common/PageMetaData';
 
 const BlogsPage = () => {
 	const [allBlogs] = UseBlogs();
@@ -38,6 +39,10 @@ const BlogsPage = () => {
 
 	return (
 		<section className="mb-20">
+			<PageMetaData
+				title="Blogs | LegalCO"
+				description="Explore insightful legal blogs on the LegalCO platform. Stay informed about legal matters, services offered by LegalCO Limited, and privacy policies. Our blogs cover a wide range of topics, providing valuable information to enhance your legal knowledge. Discover the latest updates and make informed choices with LegalCO's comprehensive legal blog."
+			/>
 			{allBlog && Array.isArray(allBlog) ? (
 				<>
 					<div className="blog-bg lg:flex items-center justify-center space-y-3 p-4 md:px-8 pt-[150px] pb-10 -mt-[100px] text-white">

@@ -1,10 +1,11 @@
-import { Suspense, lazy, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Ads from '../components/Home/Ads';
 import Banner from '../components/Home/Banner';
 import Services from '../components/Home/Services';
 import Cyberbullies from '../components/Home/Cyberbullies';
 import LawyerSection from '../components/Home/LawyerSection';
 import HappyClient from '../components/Home/HappyClient';
+import PageMetaData from '../Common/PageMetaData';
 
 const Home = () => {
 	const [confirm, setConfirm] = useState(false);
@@ -21,6 +22,10 @@ const Home = () => {
 	}, []);
 	return (
 		<div>
+			<PageMetaData
+				title="Home | LegalCO"
+				description="LegalCO Limited offers an app & web and mobile-enabled application/website. This platform serves to provide information about LegalCO, its services, and general legal matters. The privacy notice pertains to this App/website and is under the ownership and operation of LegalCO Limited. This notice outlines how LegalCO gathers and utilizes personal information from App/website visitors. Additionally, it informs users and visitors about the choices they have regarding LegalCOs handling of their personal data."
+			/>
 			<Banner />
 			<Ads />
 			<Services />

@@ -12,6 +12,8 @@ const Appointment = lazy(() => import('./pages/Appointment.jsx'));
 const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
 const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
+const ServiceDetails = lazy(() => import('./pages/ServiceDetails.jsx'));
+const LawyerAppointment = lazy(() => import('./pages/LawyerAppointment.jsx'));
 const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
 const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
 const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition.jsx'));
@@ -27,8 +29,18 @@ const router = createBrowserRouter([
 				element: <Home />
 			},
 			{
+				path: '/services/:id',
+				element: <ServiceDetails />,
+				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/services/${params.id}`)
+			},
+			{
 				path: '/lawyers/:id',
 				element: <LawyerDetails />,
+				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/lawyers/${params.id}`)
+			},
+			{
+				path: '/lawyer-appointment/:id',
+				element: <LawyerAppointment />,
 				loader: ({ params }) => fetch(`${import.meta.env.VITE_SERVER_URL}/lawyers/${params.id}`)
 			},
 			{

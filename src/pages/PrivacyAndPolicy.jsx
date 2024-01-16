@@ -1,9 +1,15 @@
 import Container from '../Common/Container';
+import PageMetaData from '../Common/PageMetaData';
 import contact from '../assets/contactus.jpg';
 
 const PrivacyAndPolicy = () => {
 	return (
 		<div className="banner-image bg-[#35878b18] pb-12">
+			<PageMetaData
+				title="Privacy And Policy | LegalCO"
+				description="Understand how LegalCO Limited handles your personal information through our Privacy Policy. This comprehensive document outlines our commitment to safeguarding your data, explaining the collection, usage, and protection of your personal information. Explore your rights, choices, and the transparency we maintain in our privacy practices. Trust LegalCO to prioritize the security and privacy of your data as you navigate our app and web-enabled services."
+			/>
+
 			<img className="h-96 object-cover -mt-[100px]" src={contact} alt="Banner" />
 			<Container>
 				<div className=" ">

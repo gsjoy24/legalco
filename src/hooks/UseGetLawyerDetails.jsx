@@ -10,7 +10,7 @@ const UseGetLawyerDetails = (id) => {
 
 	useEffect(() => {
 		(async () => {
-			const res = await axios(`/api/lawyer/${id}`);
+			const res = await axios(`${import.meta.env.VITE_SERVER_URL}/lawyers/${id}`);
 			if (res?.data) {
 				setLawyerDetails(res?.data);
 			}
