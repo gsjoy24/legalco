@@ -3,8 +3,8 @@ import { BsTelephone } from 'react-icons/bs';
 import { FaBuilding } from 'react-icons/fa';
 import { ImMobile } from 'react-icons/im';
 
-import aboutImg from '../assets/about-us/lima.jpg';
-import ceo from '../assets/about-us/mehedi.jpg';
+import aboutImg from '../assets/about-us/Lima.jpg';
+import ceo from '../assets/about-us/Mehedi.jpg';
 import missionImg from '../assets/about-us/mission.jpg';
 import visionImg from '../assets/about-us/vision.jpg';
 import Container from '../Common/Container';
