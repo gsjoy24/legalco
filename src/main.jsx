@@ -24,6 +24,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: '/',
@@ -81,8 +82,7 @@ const router = createBrowserRouter([
 				path: '/client-bill-of-rights',
 				element: <ClientBillOfRights />
 			}
-		],
-		errorElement: <ErrorPage />
+		]
 	}
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
