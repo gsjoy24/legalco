@@ -18,6 +18,7 @@ const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
 const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
 const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition.jsx'));
 const ClientBillOfRights = lazy(() => import('./pages/ClientBillOfRights.jsx'));
+const ErrorPage = lazy(() => import('./components/ErrorPage.jsx'));
 
 const router = createBrowserRouter([
 	{
@@ -80,7 +81,8 @@ const router = createBrowserRouter([
 				path: '/client-bill-of-rights',
 				element: <ClientBillOfRights />
 			}
-		]
+		],
+		errorElement: <ErrorPage />
 	}
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
