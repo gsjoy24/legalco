@@ -2,9 +2,9 @@ import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App.jsx';
 
 // using lazy loading to improve user experience
-const App = lazy(() => import('./App.jsx'));
 const Home = lazy(() => import('./pages/Home.jsx'));
 const Blogs = lazy(() => import('./pages/Blogs.jsx'));
 const BlogDetails = lazy(() => import('./pages/BlogDetails.jsx'));
@@ -18,7 +18,8 @@ const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
 const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
 const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition.jsx'));
 const ClientBillOfRights = lazy(() => import('./pages/ClientBillOfRights.jsx'));
-const ErrorPage = lazy(() => import('./components/ErrorPage.jsx'));
+// const ErrorPage = lazy(() => import('./components/ErrorPage.jsx'));
+import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
 	{
