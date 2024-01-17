@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import Container from '../../Common/Container';
-import bg from '../../assets/image.jpg';
 
 const Banner = () => {
 	return (
