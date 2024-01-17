@@ -11,9 +11,9 @@ function App() {
 		<>
 			<Navbar />
 			<main className='min-h-[100vh]'>
-				{/* <Suspense fallback={<LoadingPage />}> */}
-				<Outlet />
-				{/* </Suspense> */}
+				<Suspense fallback={<LoadingPage />}>
+					<Outlet />
+				</Suspense>
 			</main>
 			<Messenger />
 			<Footer />

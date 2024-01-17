@@ -2,37 +2,40 @@ import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './App.jsx';
 
 // using lazy loading to improve user experience
-// const Home = lazy(() => import('./pages/Home.jsx'));
-// const Blogs = lazy(() => import('./pages/Blogs.jsx'));
-// const BlogDetails = lazy(() => import('./pages/BlogDetails.jsx'));
-// const Appointment = lazy(() => import('./pages/Appointment.jsx'));
-// const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
-// const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
-// const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
-// const ServiceDetails = lazy(() => import('./pages/ServiceDetails.jsx'));
-// const LawyerAppointment = lazy(() => import('./pages/LawyerAppointment.jsx'));
-// const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
-// const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
-// const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition.jsx'));
-// const ClientBillOfRights = lazy(() => import('./pages/ClientBillOfRights.jsx'));
-// const ErrorPage = lazy(() => import('./components/ErrorPage.jsx'));
-import Home from './pages/Home.jsx';
-import Blogs from './pages/Blogs.jsx';
-import BlogDetails from './pages/BlogDetails.jsx';
-import Appointment from './pages/Appointment.jsx';
-import ContactUsPage from './pages/ContactUsPage.jsx';
-import AboutUs from './pages/AboutUs.jsx';
-import LawyerDetails from './pages/LawyerDetails.jsx';
-import ServiceDetails from './pages/ServiceDetails.jsx';
-import LawyerAppointment from './pages/LawyerAppointment.jsx';
-import PrivacyAndPolicy from './pages/PrivacyAndPolicy.jsx';
-import RefundAndRefundPolicy from './pages/RefundAndRefundPolicy.jsx';
-import TermsAndCondition from './pages/TermsAndCondition.jsx';
-import ClientBillOfRights from './pages/ClientBillOfRights.jsx';
-import ErrorPage from './components/ErrorPage.jsx';
+const App = lazy(() => import('./App.jsx'));
+const Home = lazy(() => import('./pages/Home.jsx'));
+const Blogs = lazy(() => import('./pages/Blogs.jsx'));
+const BlogDetails = lazy(() => import('./pages/BlogDetails.jsx'));
+const Appointment = lazy(() => import('./pages/Appointment.jsx'));
+const ContactUsPage = lazy(() => import('./pages/ContactUsPage.jsx'));
+const AboutUs = lazy(() => import('./pages/AboutUs.jsx'));
+const LawyerDetails = lazy(() => import('./pages/LawyerDetails.jsx'));
+const ServiceDetails = lazy(() => import('./pages/ServiceDetails.jsx'));
+const LawyerAppointment = lazy(() => import('./pages/LawyerAppointment.jsx'));
+const PrivacyAndPolicy = lazy(() => import('./pages/PrivacyAndPolicy.jsx'));
+const RefundAndRefundPolicy = lazy(() => import('./pages/RefundAndRefundPolicy.jsx'));
+const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition.jsx'));
+const ClientBillOfRights = lazy(() => import('./pages/ClientBillOfRights.jsx'));
+const ErrorPage = lazy(() => import('./components/ErrorPage.jsx'));
+
+// ! using normal import
+// import App from './App.jsx';
+// import Home from './pages/Home.jsx';
+// import Blogs from './pages/Blogs.jsx';
+// import BlogDetails from './pages/BlogDetails.jsx';
+// import Appointment from './pages/Appointment.jsx';
+// import ContactUsPage from './pages/ContactUsPage.jsx';
+// import AboutUs from './pages/AboutUs.jsx';
+// import LawyerDetails from './pages/LawyerDetails.jsx';
+// import ServiceDetails from './pages/ServiceDetails.jsx';
+// import LawyerAppointment from './pages/LawyerAppointment.jsx';
+// import PrivacyAndPolicy from './pages/PrivacyAndPolicy.jsx';
+// import RefundAndRefundPolicy from './pages/RefundAndRefundPolicy.jsx';
+// import TermsAndCondition from './pages/TermsAndCondition.jsx';
+// import ClientBillOfRights from './pages/ClientBillOfRights.jsx';
+// import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
 	{
