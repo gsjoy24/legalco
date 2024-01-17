@@ -10,14 +10,14 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<main className="min-h-[100vh]">
-				<Suspense fallback={<LoadingPage />}>
-					<Outlet />
-				</Suspense>
+			<main className='min-h-[100vh]'>
+				{/* <Suspense fallback={<LoadingPage />}> */}
+				<Outlet />
+				{/* </Suspense> */}
 			</main>
 			<Messenger />
 			<Footer />
-			<Toaster position="top-center" />
+			<Toaster position='top-center' />
 		</>
 	);
 }
