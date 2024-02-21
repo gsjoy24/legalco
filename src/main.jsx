@@ -1,9 +1,8 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
-// ! using normal import
 import App from './App.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import AboutUs from './pages/AboutUs.jsx';
