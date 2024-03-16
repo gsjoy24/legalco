@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /services/
+Allow: /lawyers/
+Allow: /lawyers-appointment/
+Allow: /appointment/
+Allow: /lawyers/
+Allow: /blogs/
+Allow: /contact-us
+Allow: /about-us
+Allow: /privacy-and-policy
+Allow: /return-and-refund-policy
+Allow: /client-bill-of-rights
+Allow: /terms-and-condition
