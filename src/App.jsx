@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import Messenger from './components/Home/Messenger';
 import Footer from './shared/Footer';
 
+import { Suspense } from 'react';
+import LoadingPage from './shared/Loading';
 import Navbar from './shared/Navbar';
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
 		<>
 			<Navbar />
 			<main className='min-h-[100vh]'>
-				<Outlet />
+				<Suspense fallback={<LoadingPage />}>
+					<Outlet />
+				</Suspense>
 			</main>
 			<Messenger />
 			<Footer />
