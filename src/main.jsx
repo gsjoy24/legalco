@@ -3,23 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
-// import App from './App.jsx';
-// import ErrorPage from './components/ErrorPage.jsx';
-// import AboutUs from './pages/AboutUs.jsx';
-// import Appointment from './pages/Appointment.jsx';
-// import BlogDetails from './pages/BlogDetails.jsx';
-// import Blogs from './pages/Blogs.jsx';
-// import ClientBillOfRights from './pages/ClientBillOfRights.jsx';
-// import ContactUsPage from './pages/ContactUsPage.jsx';
-// import Home from './pages/Home.jsx';
-// import LawyerAppointment from './pages/LawyerAppointment.jsx';
-// import LawyerDetails from './pages/LawyerDetails.jsx';
-// import PrivacyAndPolicy from './pages/PrivacyAndPolicy.jsx';
-// import RefundAndRefundPolicy from './pages/RefundAndRefundPolicy.jsx';
-// import ServiceDetails from './pages/ServiceDetails.jsx';
-// import TermsAndCondition from './pages/TermsAndCondition.jsx';
-
-// using dynamic import to load the components
+// using dynamic import to load the components only when needed to improve the performance.
 const App = React.lazy(() => import('./App.jsx'));
 const ErrorPage = React.lazy(() => import('./components/ErrorPage.jsx'));
 const AboutUs = React.lazy(() => import('./pages/AboutUs.jsx'));
@@ -101,6 +85,7 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />
 	}
 ]);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
