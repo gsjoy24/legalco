@@ -9,7 +9,7 @@ const Banner = () => {
 					<div className='text-white md:mt-5 lg:mt-16'>
 						<h1 className='text-2xl md:text-4xl font-bold '>
 							Bangladesh’s <span className='text-[#F59E0B]'>No.1</span> app for legal solutions tailored to your legal
-							needs. testing
+							needs. testing 2
 						</h1>
 						<p className='mt-6 mb-10'>Really Unbelievable Solutions for all Legal Cases. Connect with legal experts.</p>
 						<Link
